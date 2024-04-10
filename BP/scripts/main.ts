@@ -14,9 +14,7 @@ world.beforeEvents.chatSend.subscribe((c) => {
 
     const [x, y, z] = n;
     */
-    setInterval(() => {
-        let name = world.getDimension(p.dimension.id).getBlock(p.location).typeId
-        p.sendMessage(name)
-    }, timeIntevalSeconds * 1000);
+    let name = world.getDimension(p.dimension.id).getBlock(p.location).typeId
+    p.sendMessage(name)
 
 })
